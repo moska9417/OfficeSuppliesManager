@@ -1,0 +1,10 @@
+/OfficeSuppliesManager.xcodeproj/project.xcworkspace
+/OfficeSuppliesManager.xcodeproj/xcuserdata
+UserInterfaceState.xcuserstate
+xcschememanagement.plist
+Pods/Pods.xcodeproj/xcuserdata
+OfficeSuppliesManager.xcworkspace/xcuserdata
+## OS X
+.DS_Store
+*.DS_Store
+.DS_Store

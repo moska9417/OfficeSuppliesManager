@@ -1,0 +1,6 @@
+framework module Pods_OfficeSuppliesManagerTests {
+  umbrella header "Pods-OfficeSuppliesManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
