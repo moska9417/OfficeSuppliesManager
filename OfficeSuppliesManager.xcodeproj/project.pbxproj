@@ -17,6 +17,8 @@
 		3CD750F12D27816900878A50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD750ED2D27816900878A50 /* ViewController.m */; };
 		3CD750F22D27816900878A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD750E92D27816900878A50 /* Assets.xcassets */; };
 		3CD750F82D27819F00878A50 /* MSKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD750F72D27819F00878A50 /* MSKTabBarView.m */; };
+		3CF82C892D37C0C4005131F4 /* MSKDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF82C882D37C0C4005131F4 /* MSKDirectoryManager.m */; };
+		3CF82C8E2D37C176005131F4 /* MSKStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */; };
 		3CFA19332D3742EC001B3BD3 /* MSKCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19322D3742EC001B3BD3 /* MSKCacheManager.m */; };
 		3CFA19892D374574001B3BD3 /* DKNightVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19482D374574001B3BD3 /* DKNightVersionManager.m */; };
 		3CFA198A2D374574001B3BD3 /* UISearchBar+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19612D374574001B3BD3 /* UISearchBar+Keyboard.m */; };
@@ -95,6 +97,12 @@
 		3CD750ED2D27816900878A50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3CD750F62D27819F00878A50 /* MSKTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKTabBarView.h; sourceTree = "<group>"; };
 		3CD750F72D27819F00878A50 /* MSKTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKTabBarView.m; sourceTree = "<group>"; };
+		3CF82C822D37BEF9005131F4 /* MSKKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKKit.h; sourceTree = "<group>"; };
+		3CF82C852D37BF47005131F4 /* LMSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSingleton.h; sourceTree = "<group>"; };
+		3CF82C872D37C0C4005131F4 /* MSKDirectoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKDirectoryManager.h; sourceTree = "<group>"; };
+		3CF82C882D37C0C4005131F4 /* MSKDirectoryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKDirectoryManager.m; sourceTree = "<group>"; };
+		3CF82C8C2D37C176005131F4 /* MSKStorageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKStorageHelper.h; sourceTree = "<group>"; };
+		3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKStorageHelper.m; sourceTree = "<group>"; };
 		3CFA19312D3742EC001B3BD3 /* MSKCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKCacheManager.h; sourceTree = "<group>"; };
 		3CFA19322D3742EC001B3BD3 /* MSKCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKCacheManager.m; sourceTree = "<group>"; };
 		3CFA193D2D374574001B3BD3 /* DKColorTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKColorTable.h; sourceTree = "<group>"; };
@@ -243,7 +251,8 @@
 		3C7E50962D2BB73400B79D75 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				3CFA19302D3742C5001B3BD3 /* MSKCache */,
+				3CF82C862D37C0AA005131F4 /* DataManager */,
+				3CFA19302D3742C5001B3BD3 /* Cache */,
 				3CCCAB0A2D2E1165000474E3 /* CollectionViewCell */,
 				3C7E50992D2BD2FE00B79D75 /* BezierPath */,
 				3C7E50972D2BB73C00B79D75 /* Macro */,
@@ -254,8 +263,10 @@
 		3C7E50972D2BB73C00B79D75 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				3CF82C822D37BEF9005131F4 /* MSKKit.h */,
 				3CFA19AB2D374D4F001B3BD3 /* MSKCommonConstantDefine.h */,
 				3C7E50982D2BB76500B79D75 /* MSKCommenUIMacroDefine.h */,
+				3CF82C852D37BF47005131F4 /* LMSingleton.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -338,6 +349,7 @@
 		3CD750EE2D27816900878A50 /* OfficeSuppliesManager */ = {
 			isa = PBXGroup;
 			children = (
+				3CF82C8A2D37C15E005131F4 /* General */,
 				3CFA193C2D3744D5001B3BD3 /* Vendors */,
 				3CCCAB0F2D2E1696000474E3 /* TestPage */,
 				3CCCAAA32D2CFA52000474E3 /* HomePage */,
@@ -371,13 +383,39 @@
 			path = TabBarView;
 			sourceTree = "<group>";
 		};
-		3CFA19302D3742C5001B3BD3 /* MSKCache */ = {
+		3CF82C862D37C0AA005131F4 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3CF82C872D37C0C4005131F4 /* MSKDirectoryManager.h */,
+				3CF82C882D37C0C4005131F4 /* MSKDirectoryManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3CF82C8A2D37C15E005131F4 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3CF82C8B2D37C162005131F4 /* Helpers */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		3CF82C8B2D37C162005131F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3CF82C8C2D37C176005131F4 /* MSKStorageHelper.h */,
+				3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3CFA19302D3742C5001B3BD3 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
 				3CFA19312D3742EC001B3BD3 /* MSKCacheManager.h */,
 				3CFA19322D3742EC001B3BD3 /* MSKCacheManager.m */,
 			);
-			path = MSKCache;
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		3CFA193C2D3744D5001B3BD3 /* Vendors */ = {
@@ -774,6 +812,7 @@
 				3CFA198C2D374574001B3BD3 /* UIButton+Night.m in Sources */,
 				3CFA198D2D374574001B3BD3 /* UISlider+Night.m in Sources */,
 				3CFA198E2D374574001B3BD3 /* UITextView+Keyboard.m in Sources */,
+				3CF82C8E2D37C176005131F4 /* MSKStorageHelper.m in Sources */,
 				3CFA198F2D374574001B3BD3 /* UILabel+Night.m in Sources */,
 				3CFA19902D374574001B3BD3 /* UINavigationBar+Night.m in Sources */,
 				3CFA19912D374574001B3BD3 /* UIControl+Night.m in Sources */,
@@ -793,6 +832,7 @@
 				3CFA199F2D374574001B3BD3 /* CAShapeLayer+Night.m in Sources */,
 				3CFA19A02D374574001B3BD3 /* UITextView+Night.m in Sources */,
 				3CFA19A12D374574001B3BD3 /* UISwitch+Night.m in Sources */,
+				3CF82C892D37C0C4005131F4 /* MSKDirectoryManager.m in Sources */,
 				3CFA19A22D374574001B3BD3 /* CALayer+Night.m in Sources */,
 				3CFA19A32D374574001B3BD3 /* UISearchBar+Night.m in Sources */,
 				3CFA19A42D374574001B3BD3 /* DKImage.m in Sources */,

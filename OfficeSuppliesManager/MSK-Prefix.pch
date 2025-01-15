@@ -12,4 +12,5 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <Foundation/Foundation.h>
 #import "MSKCommenUIMacroDefine.h"
+#import "MSKKit.h"
 #endif /* PrefixHeader_pch */

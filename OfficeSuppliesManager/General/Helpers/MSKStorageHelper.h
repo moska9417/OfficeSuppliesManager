@@ -1,5 +1,5 @@
 //
-//  MSKCacheManager.h
+//  MSKStorageHelper.h
 //  OfficeSuppliesManager
 //
 //  Created by 赵兰清 on 2025/1/15.
@@ -9,8 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MSKCacheManager : NSObject
+@interface MSKStorageHelper : NSObject
 
++ (BOOL) createDirectoryIfNotExist:(NSString *)path;
 @end
 
 NS_ASSUME_NONNULL_END
