@@ -19,6 +19,7 @@
 		3CD750F82D27819F00878A50 /* MSKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD750F72D27819F00878A50 /* MSKTabBarView.m */; };
 		3CF82C892D37C0C4005131F4 /* MSKDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF82C882D37C0C4005131F4 /* MSKDirectoryManager.m */; };
 		3CF82C8E2D37C176005131F4 /* MSKStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */; };
+		3CF82C922D37C8BE005131F4 /* UIImage+MSKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF82C912D37C8BE005131F4 /* UIImage+MSKImage.m */; };
 		3CFA19332D3742EC001B3BD3 /* MSKCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19322D3742EC001B3BD3 /* MSKCacheManager.m */; };
 		3CFA19892D374574001B3BD3 /* DKNightVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19482D374574001B3BD3 /* DKNightVersionManager.m */; };
 		3CFA198A2D374574001B3BD3 /* UISearchBar+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA19612D374574001B3BD3 /* UISearchBar+Keyboard.m */; };
@@ -103,6 +104,8 @@
 		3CF82C882D37C0C4005131F4 /* MSKDirectoryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKDirectoryManager.m; sourceTree = "<group>"; };
 		3CF82C8C2D37C176005131F4 /* MSKStorageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKStorageHelper.h; sourceTree = "<group>"; };
 		3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKStorageHelper.m; sourceTree = "<group>"; };
+		3CF82C902D37C8BE005131F4 /* UIImage+MSKImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MSKImage.h"; sourceTree = "<group>"; };
+		3CF82C912D37C8BE005131F4 /* UIImage+MSKImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MSKImage.m"; sourceTree = "<group>"; };
 		3CFA19312D3742EC001B3BD3 /* MSKCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKCacheManager.h; sourceTree = "<group>"; };
 		3CFA19322D3742EC001B3BD3 /* MSKCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSKCacheManager.m; sourceTree = "<group>"; };
 		3CFA193D2D374574001B3BD3 /* DKColorTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKColorTable.h; sourceTree = "<group>"; };
@@ -395,6 +398,7 @@
 		3CF82C8A2D37C15E005131F4 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				3CF82C8F2D37C89B005131F4 /* CustomCategory */,
 				3CF82C8B2D37C162005131F4 /* Helpers */,
 			);
 			path = General;
@@ -407,6 +411,15 @@
 				3CF82C8D2D37C176005131F4 /* MSKStorageHelper.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3CF82C8F2D37C89B005131F4 /* CustomCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3CF82C902D37C8BE005131F4 /* UIImage+MSKImage.h */,
+				3CF82C912D37C8BE005131F4 /* UIImage+MSKImage.m */,
+			);
+			path = CustomCategory;
 			sourceTree = "<group>";
 		};
 		3CFA19302D3742C5001B3BD3 /* Cache */ = {
@@ -841,6 +854,7 @@
 				3CFA19A72D374574001B3BD3 /* DKColor.m in Sources */,
 				3CCCAB192D2E241C000474E3 /* MSKPillTabBarView.m in Sources */,
 				3CD750F02D27816900878A50 /* main.m in Sources */,
+				3CF82C922D37C8BE005131F4 /* UIImage+MSKImage.m in Sources */,
 				3CCCAB122D2E16B8000474E3 /* TestViewController.m in Sources */,
 				3CD750F12D27816900878A50 /* ViewController.m in Sources */,
 			);
